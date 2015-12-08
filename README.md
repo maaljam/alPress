@@ -26,19 +26,19 @@ angular.module('app', ['al-press']);
 + The basic use is as follows: (event will fire by default after 500ms long press)
 >
 ``` html
-<div al-press="onPress">Click Me</div>
+<div al-press="onPress()">Click Me</div>
 ```
 
 + You can specify a custom duration like below
 >
 ``` html
-<div al-press="onPress" duration="1000">Click Me</div>
+<div al-press="onPress($event)" duration="1000">Click Me</div>
 ```
 
 + You can attach another event that fires on press end
 >
 ``` html
-<div al-press on-press-end="onPressEnd" >Click Me</div>
+<div al-press on-press-end="onPressEnd()" >Click Me</div>
 ```
 
 + In Controller
